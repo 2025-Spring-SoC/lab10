@@ -1,0 +1,26 @@
+// Copyright (c) 2021 Sungkyunkwan University
+//
+// Authors:
+// - Jungrae Kim <dale40@skku.edu>
+
+regfile channel_sfr
+{
+	// TODO:
+	// Implement this regfile to include
+	// DMA_SRC, DMA_DST, DMA_LEN, DMA_CMD, DMA_STATUS
+};
+
+addrmap DMAC_CFG {
+	name = "DMA controller address map";
+	desc = "Address map of ECE4278 DRAM controller project";
+	
+	// 
+	// Fill your code here
+	// (DMA_VER)
+	//
+
+	channel_sfr CH0 @0x100;
+	channel_sfr CH1 // Fill your code here
+	channel_sfr CH2 // Fill your code here
+	channel_sfr CH3 // Fill your code here
+};
